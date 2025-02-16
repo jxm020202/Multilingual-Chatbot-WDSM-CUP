@@ -5,7 +5,7 @@ This project was developed for the **WSDM Cup Multilingual Chatbot Arena** compe
 
 ---
 
-## **📌 Project Overview**  
+## **Project Overview**  
 
 The objective is to **train models that can determine the superior chatbot response** given a prompt. The dataset contains prompts and two corresponding chatbot-generated responses (`response_a` and `response_b`). The model predicts which response is better based on ranking.  
 
@@ -21,7 +21,7 @@ There are multiple training scripts, each implementing similar logic but using d
 
 ---
 
-## **🚀 Training**  
+## **Training**  
 
 Each model is trained separately with **LoRA-based fine-tuning** for efficiency. The core training script includes:  
 - **Dataset Processing** (prompt-response structuring, tokenization).  
@@ -44,7 +44,7 @@ python training_gemma.py
 
 ---
 
-## **🔥 GPU Utilization & Experiments**  
+## **GPU Utilization & Experiments**  
 
 This project actively **leverages multiple GPUs** on both **Kaggle and Colab Pro** for efficient model execution.  
 
@@ -78,14 +78,10 @@ python inference.py
 
 ---
 
-## **📝 Additional Notes**  
+## **Additional Notes**  
 
-- **Sloth**-based adaptive LoRA selection may be tested in future experiments.  
-- MCQ-style tokenization was explored in different contexts but **not used here** explicitly.  
-- Some helper notebooks are included but are **not original content** and may be added dynamically.  
+- MCQ-style tokenization was explored in different contexts but **not used here** explicitly. Although it definitely boosted performance, it did not make a lot of difference in bigger model, and just increased training time, which could be avoided by better tokenization techniques probably.
+- Some helper learning notebooks are included but are **not original content**, its just useful for future references.  
 
----
-
-This README explains the code and methodology without placeholders or unnecessary details. Let me know if you want modifications!  
 
 ---
